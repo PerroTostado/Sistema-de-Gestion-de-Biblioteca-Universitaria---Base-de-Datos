@@ -3,7 +3,7 @@
 **Entrega 1 — Base de Datos I**
 Universidad Industrial de Santander · Facultad de Ingenierías Fisicomecánicas
 
-> **Sistema de Gestión de una Biblioteca Universitaria** es el diseño de una base de datos para una plataforma que administra los recursos bibliográficos, los procesos de circulación y las políticas de préstamo a través de una red de bibliotecas multi-sede, integrando tanto inventario físico como disponibilidad híbrida y recursos digitales.
+> **BiblioTech** es el diseño de una base de datos para una plataforma que administra los recursos bibliográficos, los procesos de circulación y las políticas de préstamo a través de una red de bibliotecas multi-sede, integrando tanto inventario físico como disponibilidad híbrida y recursos digitales.
 
 ---
 
