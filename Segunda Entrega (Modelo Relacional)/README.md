@@ -6,7 +6,7 @@ Para esta entrega el equipo transformo el diagrama original, hecho en base al mo
 
 ## Documento entregable
 
-[`Documento Entregable V_2`](../Segunda-Entrega-(Modelo-Relacional)/EntregableV2.md).
+[`Documento Entregable V_2`](./EntregableV2.md).
 
 | # | Sección |
 | :--- | :--- |
