@@ -64,7 +64,7 @@ El modelo completo de 20 tablas con el tipo de dato de cada columna se detalla e
 
 El modelo fue sometido a evaluación y refactorización transaccional (OLTP). Este es el resumen de la aplicación de las formas normales:
 
-| Forma Normal | Estado de Aplicación | Justificación / Acción Técnica |
+| Forma Normal | Implementación | Utilidad sobre el proyecto |
 | :--- | :--- | :--- |
 | **1FN** | Implementado | Garantizamos atributos atómicos (ej. el Teléfono en USUARIO es un único valor INT) y aseguramos que cada tabla cuente con una Llave Primaria escalar simple. |
 | **2FN** | Implementado | Revisamos las tablas con llave compuesta (ESCRIBE, CLASIFICA, PUBLICA) y confirmamos la ausencia de dependencias parciales, ya que son tablas de unión puras sin atributos descriptivos. |
