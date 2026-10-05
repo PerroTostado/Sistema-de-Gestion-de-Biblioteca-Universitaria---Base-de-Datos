@@ -1,12 +1,6 @@
-## Sistema de Gestión de Biblioteca Universitaria
+## Sistema de Gestión de Biblioteca Universitaria - 22959, Base de Datos I, Grupo G3**
 
-**22959: Base de Datos I, Grupo G3**
-
-**Docente: Nury Farelo**
-
-**12 de Agosto de 2026**
-
-## Autores
+## Integrantes
 | Nombre completo | Código |
 |---|---:|
 | Juan Camilo Hernández Parra | 2250174 |
