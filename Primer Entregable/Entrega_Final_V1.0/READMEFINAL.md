@@ -1,4 +1,4 @@
-# Sistema de Gestión de una Biblioteca Universitaria
+# BiblioTech, un Sistema de Gestión de Biblioteca Universitaria
 
 **Entrega 1 — Base de Datos I**
 Universidad Industrial de Santander · Facultad de Ingenierías Fisicomecánicas
