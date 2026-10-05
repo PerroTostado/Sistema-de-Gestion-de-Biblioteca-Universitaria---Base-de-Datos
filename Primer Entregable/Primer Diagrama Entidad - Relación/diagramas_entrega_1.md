@@ -4,8 +4,6 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 ## Inventario
 
-| 
-
 | **Archivo** | **Descripción** | 
 | [`primer-modelo-e-r.md`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/primer-modelo-e-r.md) | Diagrama Propuesto. | 
 
