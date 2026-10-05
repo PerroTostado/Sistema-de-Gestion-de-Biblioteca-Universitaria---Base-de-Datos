@@ -19,9 +19,9 @@ A partir del modelo E-R de la primera entrega, construimos el modelo relacional 
 
 | Archivo | Ruta / Nombre | Descripción |
 | :--- | :--- | :--- |
-| Imagen del Modelo relacional | [Proyecto_Biblioteca_Relacional_Normalizado_5FN](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/8ce7e7448f5e3f0b659cfdaacafbdec3f8a2d2f5/Segunda%20Entrega%20(Modelo%20Relacional)/Modelo%20Relacional%20Normalizado/Proyecto_Biblioteca_Relacional_Normalizado_5FN.png) | Diagrama visual con: 20 tablas, relaciones, PK's y FK's. |
-| Diccionario de Datos | [diccionario_de_datos.md](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/8ce7e7448f5e3f0b659cfdaacafbdec3f8a2d2f5/Segunda%20Entrega%20(Modelo%20Relacional)/Modelo%20Relacional%20Normalizado/diccionario_de_datos.md)| Detalle completo de las tablas, tipos de datos (INT, CHAR, DATE, etc.) y descripciones de cada columna. |
-| Informe de normalización | [informe_de_normalizacion](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/8ce7e7448f5e3f0b659cfdaacafbdec3f8a2d2f5/Segunda%20Entrega%20(Modelo%20Relacional)/Informe%20de%20Aplicaci%C3%B3n%20de%20los%20Pasos%20de%20Normalizaci%C3%B3n/informe_de_normalizacion.md) | Informe de aplicación y justificación de los pasos de normalización desde la 1FN hasta la decisión de omitir la 6FN. |
+| Imagen del Modelo relacional | [Proyecto Biblioteca Relacional Normalizado 5FN](../Proyecto_Biblioteca_Relacional_Normalizado_5FN.png) | Diagrama visual del Modelo Relacional normalizado, este contiene: 20 tablas, cada una con sus atributos, PK's, y FK's. correspondientes |
+| Diccionario de Datos | [diccionario de datos](../diccionario_de_datos.md)| Detalle completo de las tablas, tipos de datos (INT, CHAR, DATE, etc.) y descripciones de cada columna. |
+| Informe de normalización | [Informe de Normalización](../informe_de_normalizacion.md) | Informe de aplicación y justificación de los pasos de normalización desde la 1FN hasta la decisión de omitir la 6FN. |
 
 ## Contenido
 
