@@ -11,16 +11,13 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 ## Notación utilizada
 
-El modelo está en **notación de Chen**. La leyenda va embebida en el propio diagrama; se reproduce aquí como referencia rápida:
+El modelo está en **notación de Chen**. Se resume aquí como referencia rápida:
 
 | **Símbolo** | **Significado** | 
 | Rectángulo | Entidad fuerte |  
-| Rectángulo doble | Entidad débil | 
 | Rombo | Relación | 
-| Rombo doble | Relación identificadora (de una entidad débil) | 
 | Óvalo | Atributo | 
 | Óvalo con texto **subrayado** | Atributo clave primaria (PK) | 
-| Óvalo con subrayado **punteado** | Clave parcial (de una entidad débil) | 
 | Triángulo con `d` | Especialización / generalización disjunta | 
 | `(min, max)` sobre las líneas | Cardinalidad y participación de la relación | 
 
