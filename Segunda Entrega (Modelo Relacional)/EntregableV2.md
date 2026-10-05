@@ -31,8 +31,7 @@ A partir del modelo E-R de la primera entrega, construimos el modelo relacional 
 --- 
 ### 1. Modelo_Relacional
 
-El modelo completo de 20 tablas con el tipo de dato de cada columna se detalla en el diccionario de datos. Aquí lo resumimos en notación de esquema: la PK va en **negrita** y las FK van en *cursiva*.
-
+El modelo completo de 20 tablas con el tipo de dato de cada columna se detalla en el diccionario de datos. En este apartado se presenta la lista de tablas segmentadas por categorías basadas en el tema del proyecto: una biblioteca universitaria. 
 #### 1.1 Libros, Autores y Editoriales
 * **LIBRO**(**ID_libro**, Titulo, Idioma, Nro_paginas)
 * **CATEGORIA**(**ID_categoria**, Nombre, Descripcion)
@@ -63,7 +62,7 @@ El modelo completo de 20 tablas con el tipo de dato de cada columna se detalla e
 
 ### 2. Normalización
 
-El modelo fue sometido a evaluación y refactorización transaccional (OLTP). Este es el resumen de la aplicación de las formas normales:
+Este es el resumen de la normalización aplicada para llegar al Modelo Relacional propuesto en la teoría:
 
 | Forma Normal | Implementación | Utilidad sobre el proyecto |
 | :--- | :--- | :--- |
