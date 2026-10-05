@@ -8,9 +8,7 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 | Archivo | Descripción |
 |---------|-------------|
-| [`Modelo_Entidad_Relacion.drawio`](Modelo_Entidad_Relacion.drawio) | **Modelo E-R final** en notación de Chen. |
 | [`image_a46028.jpg`](image_a46028.jpg) | Imagen del modelo final. |
-| [`Primera_Propuesta.jpg`](Primera_Propuesta.jpg) | Bosquejo inicial hecho durante la actividad de exploración. |
 
 ---
 
