@@ -28,7 +28,7 @@ Universidad Industrial de Santander · Facultad de Ingenierías Fisicomecánicas
 
 ---
 
-## 1. Contexto del problema trabajado en la actividad de exploración
+## 1. Trasfondo de la problemática identificada 
 
 ### 1.1 Situación
 Las bibliotecas universitarias modernas no funcionan como un único espacio físico, sino que operan como una red compuesta por la Biblioteca Central, sucursales en diferentes campus o sedes regionales, y salas de lectura especializadas dentro de las facultades. El inventario se distribuye estratégicamente basándose en las necesidades de cada ubicación, lo que exige una gestión centralizada y eficiente.
@@ -47,7 +47,7 @@ Las bibliotecas universitarias modernas no funcionan como un único espacio fís
 
 ---
 
-## 2. Consulta de tendencias actuales en el área del proyecto
+## 2. Consulta de tendencias sobre el área del proyecto
 
 ### 2.1 Tendencias de operación y gestión
 
@@ -64,7 +64,7 @@ Las bibliotecas universitarias modernas no funcionan como un único espacio fís
 
 ---
 
-## 3. Consulta de herramientas o sistemas similares con su análisis de funcionalidades
+## 3. Revisión de herramientas o sistemas previamente desarrolladas
 
 Se analizaron dos sistemas que resuelven las problemáticas de la gestión bibliotecaria universitaria:
 
