@@ -14,3 +14,8 @@ Proyecto académico desarrollado para la asignatura **Bases de Datos I** de la U
 | Nicolas David Sanguino Ortiz | 2250157 |
 
 ## Estructura del repositorio
+| Entrega | Estado |
+|---|---:|
+| Entrega #1 | Entregado |
+| Entrega #2 | Por Entregar... |
+| Entrega #3 | Por Entregar... |
