@@ -38,4 +38,4 @@
 
 ## Documento final
 
-[`../Entrega_Final_V1.0/README.md](../Entrega_Final_V1.0/README.md)
+[Entrega Final V1.0](../Entrega_Final_V1.0/README.md)
