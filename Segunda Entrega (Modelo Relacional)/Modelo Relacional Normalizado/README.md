@@ -4,7 +4,7 @@
 
 ---
 ## Archivo Adjunto
-[`Modelo Relacional Normalizado`]([https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Entrega_Final_V1.0/README.md](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/e1d0fbae604732601ef4cf7086fcf5f2a6da7973/Segunda%20Entrega%20(Modelo%20Relacional)/Modelo%20Relacional%20Normalizado/Proyecto_Biblioteca_Relacional_Normalizado_5FN.png)).
+[`Modelo Relacional Normalizado`]([https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/e1d0fbae604732601ef4cf7086fcf5f2a6da7973/Segunda%20Entrega%20(Modelo%20Relacional)/Modelo%20Relacional%20Normalizado/Proyecto_Biblioteca_Relacional_Normalizado_5FN.png])
 ## Índice de Tablas
 ---
 1. [LIBRO](#1-libro)
