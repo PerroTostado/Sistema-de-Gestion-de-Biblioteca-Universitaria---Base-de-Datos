@@ -1,6 +1,6 @@
 # Diagramas — Entrega 1
 
-Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universitaria**.
+Modelos gráficos del proyecto **BiblioTech, un Sistema de Gestión de una Biblioteca Universitaria**.
 
 ---
 
@@ -14,7 +14,7 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 ## Notación utilizada
 
-El modelo está en **notación de Chen**. La leyenda va embebida en el propio diagrama; se reproduce aquí como referencia rápida:
+El modelo está en **notación de Chen**. La simbología utilizada se presenta a continuación como referencia:
 
 | Símbolo | Significado |
 |---------|-------------|
