@@ -29,7 +29,7 @@ A partir del modelo E-R de la primera entrega, construimos el modelo relacional 
 2. [Normalización](#2-Normalización)
 
 --- 
-### 1. Modelo Relacional
+### 1. Modelo_Relacional
 
 El modelo completo de 20 tablas con el tipo de dato de cada columna se detalla en el diccionario de datos. Aquí lo resumimos en notación de esquema: la PK va en **negrita** y las FK van en *cursiva*.
 
