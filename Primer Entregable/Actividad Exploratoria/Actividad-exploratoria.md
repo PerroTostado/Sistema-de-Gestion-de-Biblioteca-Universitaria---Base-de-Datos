@@ -14,13 +14,9 @@ Nicolas David Sanguino Ortiz, 2250157
 
 Facultad de Ingenierías Fisicomecánicas, Universidad Industrial de Santander
 
-22959: Base de Datos I
+22959: Base de Datos I, Grupo G3
 
-Grupo G3
-
-Docente:
-
-Nury Farelo
+Docente: Nury Farelo
 
 12 de Agosto de 2026
 
