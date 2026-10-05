@@ -17,7 +17,7 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 | **Archivo** | **Descripción** | 
 |---------|-----------|
-| [`Primer Modelo-E-R`](../Primer-Entregable/Primer-Diagrama-Entidad-Relación/primer-modelo-e-r.md) | Diagrama Propuesto. | 
+| [`Primer Modelo-E-R`](../Primer Entregable/Primer Diagrama Entidad - Relación/primer-modelo-e-r.md) | Diagrama Propuesto. | 
 
 ## Notación utilizada
 
