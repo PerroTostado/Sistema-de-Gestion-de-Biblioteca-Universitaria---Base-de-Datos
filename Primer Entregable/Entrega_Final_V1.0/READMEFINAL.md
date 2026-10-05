@@ -90,7 +90,3 @@ A continuación se presenta el modelo Entidad-Relación diseñado para el sistem
 
 
 ---
-
-## 5. Referencias
-
-*(En blanco)*
