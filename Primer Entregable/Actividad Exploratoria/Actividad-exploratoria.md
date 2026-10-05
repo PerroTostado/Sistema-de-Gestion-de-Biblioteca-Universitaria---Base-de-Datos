@@ -1,4 +1,4 @@
-## BiblioTech, un Sistema de Gestión de Biblioteca Universitaria - Base de Datos
+## Sistema de Gestión de Biblioteca Universitaria
 
 **22959: Base de Datos I, Grupo G3**
 
