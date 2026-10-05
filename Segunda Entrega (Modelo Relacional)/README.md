@@ -6,7 +6,7 @@ Para esta entrega el equipo transformo el diagrama original, hecho en base al mo
 
 ## Documento entregable
 
-[`Documento Entregable V_2`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/7d0b6cdf7c21858f90d0cd89130f44dd4e3aed45/Segunda%20Entrega%20(Modelo%20Relacional)/EntregableV2.md).
+[`Documento Entregable V_2`](/EntregableV2.md).
 
 | # | Sección |
 | :--- | :--- |
