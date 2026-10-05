@@ -14,7 +14,7 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 El modelo está en **notación de Chen**. La leyenda va embebida en el propio diagrama; se reproduce aquí como referencia rápida:
 
 | **Símbolo** | **Significado** | 
-| Rectángulo | Entidad fuerte | 
+| Rectángulo | Entidad fuerte |  
 | Rectángulo doble | Entidad débil | 
 | Rombo | Relación | 
 | Rombo doble | Relación identificadora (de una entidad débil) | 
