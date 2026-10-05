@@ -8,14 +8,13 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 | Archivo | Descripción |
 |---------|-------------|
-| [`primer-modelo-e-r.md`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/primer-modelo-e-r.md) |Diagrama Propuesto. |
+| [`primer-modelo-e-r.md`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/primer-modelo-e-r.md) | Diagrama Propuesto. |
 
 ---
 
 ## Notación utilizada
 
-El modelo está en **notación de Chen**. La leyenda va embebida en el propio
-diagrama; se reproduce aquí como referencia rápida:
+El modelo está en **notación de Chen**. La leyenda va embebida en el propio diagrama; se reproduce aquí como referencia rápida:
 
 | Símbolo | Significado |
 |---------|-------------|
@@ -24,13 +23,10 @@ diagrama; se reproduce aquí como referencia rápida:
 | Rombo | Relación |
 | Rombo doble | Relación identificadora (de una entidad débil) |
 | Óvalo | Atributo |
-| Óvalo con texto **subrayado** | Atributo clave (PK) |
+| Óvalo con texto **subrayado** | Atributo clave primaria (PK) |
 | Óvalo con subrayado **punteado** | Clave parcial (de una entidad débil) |
-| Óvalo doble | Atributo multivaluado |
-| Óvalo punteado | Atributo derivado (calculado) |
-| Triángulo `ISA` | Especialización / generalización |
-| `(d)` | Especialización disjunta |
-| `1`, `N`, `M` sobre las líneas | Cardinalidad de la relación |
+| Triángulo con `d` | Especialización / generalización disjunta |
+| `(min, max)` sobre las líneas | Cardinalidad y participación de la relación |
 
 ---
 
