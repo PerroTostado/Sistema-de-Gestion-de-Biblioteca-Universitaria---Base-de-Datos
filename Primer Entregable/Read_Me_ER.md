@@ -9,5 +9,7 @@ Primera entrega del proyecto **Sistema de Gestión de una Biblioteca Universitar
 A continuación se Listan los apartados que componen al Primer Entregable:
 | # | Sección |
 |:---:|---|
-| 1 | Actividad_Exploratoria |
-| 2 | Modelo E-R Extendido del proyecto |
+| 1 | Trasfondo de la problemática identificada |
+| 2 | Consulta de tendencias sobre el área del proyecto|
+| 3 | Revisión de herramientas o sistemas previamente desarrolladas|
+| 4 | Modelo E-R Extendido del proyecto |
