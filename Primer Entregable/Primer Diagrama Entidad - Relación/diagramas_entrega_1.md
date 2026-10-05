@@ -14,6 +14,7 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 El modelo está en **notación de Chen**. Se resume aquí como referencia rápida:
 
 | **Símbolo** | **Significado** | 
+|---------|-----------|
 | Rectángulo | Entidad fuerte |  
 | Rombo | Relación | 
 | Óvalo | Atributo | 
