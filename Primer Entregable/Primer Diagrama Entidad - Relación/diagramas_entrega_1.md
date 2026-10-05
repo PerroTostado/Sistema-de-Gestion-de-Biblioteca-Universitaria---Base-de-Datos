@@ -8,7 +8,8 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 | Archivo | Descripción |
 |---------|-------------|
-| [`image_a46028.jpg`]([image_a46028.jpg](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/edit/main/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/diagramas_entrega_1.md)) | Imagen del modelo final. |
+| [`primer-modelo-e-r.md`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/primer-modelo-e-r.md) | Documento detallado del Primer Modelo Entidad-Relación. |
+| [`image_a46028.jpg`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/edit/main/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/diagramas_entrega_1.md) | Imagen del modelo final. |
 
 ---
 
