@@ -19,7 +19,7 @@ El modelo está en **notación de Chen**. Se resume aquí como referencia rápid
 | Rombo | Relación | 
 | Óvalo | Atributo | 
 | Óvalo con texto **subrayado** | Atributo clave primaria (PK) | 
-| Triángulo con `d` | Especialización / generalización disjunta | 
+| Triángulo boca abajo | Especialización / generalización disjunta | 
 | `(min, max)` sobre las líneas | Cardinalidad y participación de la relación | 
 
 ## Contenido del modelo E-R
