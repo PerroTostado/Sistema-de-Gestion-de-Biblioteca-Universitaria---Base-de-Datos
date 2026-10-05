@@ -81,3 +81,5 @@ El primer sistema de gestión de bibliotecas de código abierto a nivel mundial,
 *   **Notificaciones y Alertas Automáticas:** Reduce la morosidad enviando correos cuando se acerca una fecha de devolución o cuando una reserva ya está lista para ser recogida.
 
 ---
+## 4 Modelo E-R del proyecto
+<img width="2472" height="2017" alt="Biblioteca_ER" src="https://github.com/user-attachments/assets/4c8bf5b0-0ee4-40e2-a9ce-983242783180" />
