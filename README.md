@@ -1,4 +1,4 @@
-# BiblioTech, un Sistema de Gestión de Biblioteca Universitaria - Base de Datos
+# Sistema de Gestión de Biblioteca Universitaria - Base de Datos
 Proyecto académico desarrollado para la asignatura **Bases de Datos I** de la Universidad Industrial de Santander.
 
 **BiblioTech** plantea una base de datos diseñada para administrar de forma integral el sistema de una biblioteca universitaria y su red de sedes. El proyecto organiza información sobre el catálogo bibliográfico (diferenciando títulos y ejemplares físicos o digitales), préstamos, renovaciones, reservas, sanciones, perfiles de usuarios (estudiantes, profesores), inventario por facultades/sedes, licenciamiento de recursos digitales y control de multas o paz y salvos.
