@@ -6,8 +6,7 @@
 
 **12 de Agosto de 2026**
 
-
-## Integrantes
+## Autores
 | Nombre completo | Código |
 |---|---:|
 | Juan Camilo Hernández Parra | 2250174 |
