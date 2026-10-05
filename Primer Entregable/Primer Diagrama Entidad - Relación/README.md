@@ -17,7 +17,7 @@ Modelos gráficos del proyecto **Sistema de Gestión de una Biblioteca Universit
 
 | **Archivo** | **Descripción** | 
 |---------|-----------|
-| [`Primer Modelo-E-R`](../Primer-Entregable/Primer-Diagrama-Entidad-Relación/primer-modelo-e-r.md) | Diagrama Propuesto. | 
+| [`Primer Modelo-E-R`]([../Primer-Entregable/Primer-Diagrama-Entidad-Relación/primer-modelo-e-r.md](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/d2b25d44e49fb8eed0b544ca71d37d0d695151c7/Primer%20Entregable/Primer%20Diagrama%20Entidad%20-%20Relaci%C3%B3n/primer-modelo-e-r.md)) | Diagrama Propuesto. | 
 
 ## Notación utilizada
 
