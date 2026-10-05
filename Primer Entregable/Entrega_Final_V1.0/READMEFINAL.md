@@ -82,7 +82,7 @@ El primer sistema de gestión de bibliotecas de código abierto a nivel mundial,
 
 ---
 
-## 4. Modelo E-R del proyecto
+## 4. Modelo E-R Extendido del proyecto
 
 A continuación se presenta el modelo Entidad-Relación diseñado para el sistema de la biblioteca:
 <img width="2472" height="2017" alt="Biblioteca_ER" src="https://github.com/user-attachments/assets/4c8bf5b0-0ee4-40e2-a9ce-983242783180" />
