@@ -1,6 +1,6 @@
 # Diccionario de Datos del Esquema Relacional
 
-> **Proyecto:** Sistema de Gestión de Biblioteca (proyecto_sanguino)
+> **Proyecto:** Sistema de Gestión de Biblioteca
 
 ---
 ## Archivo Adjunto
