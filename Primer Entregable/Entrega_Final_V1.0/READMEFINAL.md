@@ -25,7 +25,6 @@ Universidad Industrial de Santander · Facultad de Ingenierías Fisicomecánicas
 2. [Consulta de tendencias actuales en el área del proyecto](#2-consulta-de-tendencias-actuales-en-el-área-del-proyecto)
 3. [Consulta de herramientas o sistemas similares con su análisis de funcionalidades](#3-consulta-de-herramientas-o-sistemas-similares-con-su-análisis-de-funcionalidades)
 4. [Modelo E-R del proyecto](#4-modelo-e-r-del-proyecto)
-5. [Referencias](#5-referencias)
 
 ---
 
