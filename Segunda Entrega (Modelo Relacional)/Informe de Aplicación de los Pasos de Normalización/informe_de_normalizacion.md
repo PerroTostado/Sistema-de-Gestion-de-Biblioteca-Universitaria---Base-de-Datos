@@ -111,7 +111,3 @@ De haberse aplicado la 6FN, una entidad como `USUARIO` habría requerido ser fra
 * `USUARIO_TELEFONO` (`ID_usuario`, `Telefono`)
 
 * `USUARIO_DIRECCION` (`ID_usuario`, `Direccion`)
-
-### Conclusión
-
-Detener el proceso de normalización en la **5FN** responde a una decisión de arquitectura de software: en el flujo operativo diario, consultas comunes (como validar una reserva o consultar el estado de un usuario) exigirían procesar múltiples operaciones `JOIN` simultáneas para reconstruir un solo registro, degradando el tiempo de respuesta del motor de base de datos.
