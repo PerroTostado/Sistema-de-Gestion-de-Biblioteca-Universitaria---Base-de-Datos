@@ -19,9 +19,9 @@ A partir del modelo E-R de la primera entrega, construimos el modelo relacional 
 
 | Archivo | Ruta / Nombre | Descripción |
 | :--- | :--- | :--- |
-| Imagen del Modelo relacional | [Proyecto Biblioteca Relacional Normalizado 5FN](../Proyecto_Biblioteca_Relacional_Normalizado_5FN.png) | Diagrama visual del Modelo Relacional normalizado, este contiene: 20 tablas, cada una con sus atributos, PK's, y FK's. correspondientes |
-| Diccionario de Datos | [diccionario de datos](../diccionario_de_datos.md)| Detalle completo de las tablas, tipos de datos (INT, CHAR, DATE, etc.) y descripciones de cada columna. |
-| Informe de normalización | [Informe de Normalización](../informe_de_normalizacion.md) | Informe de aplicación y justificación de los pasos de normalización desde la 1FN hasta la decisión de omitir la 6FN. |
+| Imagen del Modelo relacional | [Proyecto Biblioteca Relacional Normalizado 5FN](<./Modelo Relacional Normalizado/Proyecto_Biblioteca_Relacional_Normalizado_5FN.png>) | Diagrama visual del Modelo Relacional normalizado, este contiene: 20 tablas, cada una con sus atributos, PK's, y FK's. correspondientes |
+| Diccionario de Datos | [diccionario de datos](<./Modelo Relacional Normalizado/diccionario_de_datos.md>) | Detalle completo de las tablas, tipos de datos (INT, CHAR, DATE, etc.) y descripciones de cada columna. |
+| Informe de normalización | [Informe de Normalización](<./Informe de Aplicación de los Pasos de Normalización/informe_de_normalizacion.md>) | Informe de aplicación y justificación de los pasos de normalización desde la 1FN hasta la decisión de omitir la 6FN. |
 
 ## Contenido
 
