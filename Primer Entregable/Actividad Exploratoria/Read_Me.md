@@ -11,6 +11,17 @@
 
 ---
 
+## Integrantes
+
+| Nombre completo | Código |
+|---|---:|
+| Juan Camilo Hernández Parra | 2250174 |
+| Bramdon Julián González Velandia | 2250196 |
+| Jhulian Stewar Prieto Zuluaga | 2251751 |
+| Nicolas Soto Sánchez | 2250145 |
+| Nicolas David Sanguino Ortiz | 2250157 |
+
+
 ## Archivos
 
 | Archivo | Contenido |
