@@ -5,7 +5,7 @@ Universidad Industrial de Santander · Facultad de Ingenierías Fisicomecánicas
 
 A partir del modelo E-R de la primera entrega, construimos el modelo relacional del Sistema de Gestión de Biblioteca Universitaria: 20 tablas con su llave primaria, sus llaves foráneas y el tipo de dato de cada columna, normalizado hasta la quinta forma normal (5FN).
 
-## Integrantes del grupo[cite: 4]
+## Integrantes del grupo
 
 | # | Nombre completo | Código |
 | :--- | :--- | :--- |
