@@ -26,7 +26,7 @@
 
 | Archivo | Contenido |
 |---------|-----------|
-| [`Actividad Exploratoria`](Actividad-exploratoria.md) | Desarrollo de la actividad propuesta. |
+| [`Actividad Exploratoria`](../Primer-Entregable/Actividad-Exploratoria.md) | Desarrollo de la actividad propuesta. |
 
 ### Estructura de `Actividad Exploratoria`
 
