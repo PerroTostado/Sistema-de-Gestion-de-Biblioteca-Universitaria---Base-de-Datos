@@ -1,6 +1,6 @@
 # Diccionario de Datos del Esquema Relacional
 
-> **Proyecto:** Sistema de Gestión de Biblioteca
+> **Proyecto:** Sistema de Gestión de Biblioteca Universitaria
 
 ---
 ## Archivo Adjunto
