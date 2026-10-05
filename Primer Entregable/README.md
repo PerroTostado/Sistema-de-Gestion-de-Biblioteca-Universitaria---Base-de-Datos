@@ -4,7 +4,7 @@ Primera entrega del proyecto **Sistema de Gestión de una Biblioteca Universitar
 
 ## Documento entregable
 
-[`Documento Entregable V_10`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Entrega_Final_V1.0/READMEFINAL.md).
+[`Documento Entregable V_10`](https://github.com/PerroTostado/Sistema-de-Gestion-de-Biblioteca-Universitaria---Base-de-Datos/blob/main/Primer%20Entregable/Entrega_Final_V1.0/README.md).
 
 A continuación se Listan los apartados que componen al Primer Entregable:
 | # | Sección |
