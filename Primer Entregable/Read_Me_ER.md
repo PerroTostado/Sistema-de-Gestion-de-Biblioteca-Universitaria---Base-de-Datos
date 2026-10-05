@@ -4,7 +4,7 @@ Primera entrega del proyecto **Sistema de Gestión de una Biblioteca Universitar
 
 ## Documento entregable
 
-[`Documento Entregable V_10`](Primer Entregable/Entrega_Final_V1.0/READMEFINAL.md)
+[`Documento Entregable V_10`](Primer Entregable/Entrega_Final_V1.0/READMEFINAL.md).
 
 A continuación se Listan los apartados que componen al Primer Entregable:
 | # | Sección |
