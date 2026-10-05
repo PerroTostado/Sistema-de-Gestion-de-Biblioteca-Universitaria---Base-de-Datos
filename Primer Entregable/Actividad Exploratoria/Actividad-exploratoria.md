@@ -1,18 +1,17 @@
 ## Sistema de Gestión de una Biblioteca Universitaria
 
-Integrantes:
 
-Juan Camilo Hernández Parra 2250174
+## Integrantes
 
-Bramdon Julián González Velandia 2250196
+| Nombre completo | Código |
+|---|---:|
+| Juan Camilo Hernández Parra | 2250174 |
+| Bramdon Julián González Velandia | 2250196 |
+| Jhulian Stewar Prieto Zuluaga | 2251751 |
+| Nicolas Soto Sánchez | 2250145 |
+| Nicolas David Sanguino Ortiz | 2250157 |
 
-Jhulian Stewar Prieto Zuluaga, 2251751
 
-Nicolas Soto Sánchez, 2250145
-
-Nicolas David Sanguino Ortiz, 2250157
-
-Facultad de Ingenierías Fisicomecánicas, Universidad Industrial de Santander
 
 22959: Base de Datos I, Grupo G3
 
