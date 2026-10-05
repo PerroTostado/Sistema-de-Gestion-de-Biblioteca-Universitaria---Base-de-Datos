@@ -25,9 +25,6 @@ Nury Farelo
 12 de Agosto de 2026
 
 
-## Tabla de contenido
-
-
 ## 1. Conceptos importantes y relevantes en la temática
 
 ## 1.1. Diferenciación entre Título (Obra) y Ejemplar (Copia Física)
