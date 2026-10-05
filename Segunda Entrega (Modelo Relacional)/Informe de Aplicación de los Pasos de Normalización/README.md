@@ -10,8 +10,8 @@
 | ----- | ----- | ----- | 
 | **1FN (Primera Forma Normal)** | Cumplida | Atributos atómicos y claves primarias escalares simples. | 
 | **2FN (Segunda Forma Normal)** | Cumplida | Ausencia de dependencias parciales en llaves compuestas. | 
-| **3FN (Tercera Forma Normal)** | Refactorizada | Depuración de redundancias y eliminación de ciclos transitivos. | 
-| **FNBC (Boyce-Codd)** | Refactorizada | Reestructuración de entidades espaciales para garantizar determinantes válidos. | 
+| **3FN (Tercera Forma Normal)** | Cumplida | Depuración de redundancias (llaves foráneas repetidas) y eliminación de ciclos transitivos. | 
+| **FNBC (Boyce-Codd)** | Cumplida | Validación de la llave artificial mediante la regla de negocio de coordenadas relativas. | 
 | **4FN (Cuarta Forma Normal)** | Cumplida | Aislamiento de relaciones $N:M$ para evitar productos cartesianos. | 
 | **5FN (Quinta Forma Normal)** | Cumplida | Preservación de la integridad transaccional sin pérdidas. | 
 | **6FN (Sexta Forma Normal)** | Omitida | Desestimada conscientemente para optimizar el rendimiento en OLTP. | 
@@ -48,7 +48,7 @@ En esta etapa se realizaron tres intervenciones estructurales críticas sobre el
 
    * *Problema:* La tabla `EJEMPLARES` tenía asignada la llave `fk_BIBLIOTECA`. Sin embargo, el ejemplar ya contaba con `fk_Ubicación`, y dicha ubicación ya determinaba la biblioteca correspondiente.
 
-   * *Solución:* Se eliminó `fk_BIBLIOTECA` de la tabla de ejemplares junto con las columnas manuales repetidas (`ID_titulos` y `Ubicacion` en texto plano).
+   * *Solución:* Se eliminó la llave foránea `fk_BIBLIOTECA` de la tabla de ejemplares junto con las columnas manuales repetidas. La ubicación define implícitamente la sede.
 
 2. **Ruptura del Ciclo en Préstamos:**
 
@@ -64,17 +64,15 @@ En esta etapa se realizaron tres intervenciones estructurales críticas sobre el
 
 > **Regla:** Todo determinante debe ser una clave candidata (superclave).
 
-### Evaluación de Alternativas de Diseño
+* **Estado original:** El modelo cumple con la FNBC de manera nativa gracias a la regla de negocio espacial definida para la biblioteca.
 
-#### Opción A: Criterio de Coordenadas Relativas
+### Justificación Técnica (Criterio de Coordenadas Relativas)
 
-* **Análisis:** Se evaluó la tabla `Ubicación` (`Estanteria`, `Piso`, `Sección`). Asumiendo que la numeración de estanterías se reinicia en cada nivel (ej. "Estantería 1" en Piso 1, "Estantería 1" en Piso 2), el atributo `Estanteria` no funciona como determinante único. Para identificar un punto físico, se requiere la combinación de las coordenadas completas. Bajo esta premisa, el uso de la clave primaria artificial `Id_Ubicacion` resulta válido.
+Se evaluó la tabla `Ubicación` (que contiene `Estanteria`, `Piso` y `Sección`) para identificar si alguno de sus campos era un determinante anómalo. 
 
-#### Opción B: Criterio de Identificador Físico Único (Adoptado)
+Para este sistema, se hace énfasis en la disposición física de la biblioteca: **la numeración de las estanterías es relativa y se reinicia en cada nivel**. Es decir, las estanterías siempre empiezan por la 1, 2, 3, 4... sin importar en qué piso se encuentren. 
 
-* **Análisis:** Considerando que la numeración de estanterías es única y corrida en todo el edificio (ej. de la 1 a la 100), el atributo `Estanteria` determinaba por sí solo el `Piso` y la `Sección`, generando una violación de FNBC al usar `Id_Ubicacion`.
-
-* **Solución Aplicada:** Se eliminó la clave artificial `Id_Ubicacion` y se renombró la tabla a `ESTANTERIA`. El atributo `Estanteria` (ahora `ID_Estanteria`) se estableció como la **Llave Primaria natural**, ya que en la estructura física es el mueble que determina la ubicación. Se actualizó la llave foránea correspondiente en `EJEMPLARES`.
+Bajo esta regla de negocio, el atributo `Estanteria` **no** funciona como un "súper atributo" determinante, ya que por sí solo no puede deducir en qué piso o sección se encuentra el ejemplar. Para identificar un punto físico real, se requiere obligatoriamente la combinación de todas las coordenadas. Esto elimina cualquier dependencia transitiva interna y confirma que el uso de la clave primaria artificial `Id_Ubicacion` es la decisión de diseño correcta para agrupar estas coordenadas, cumpliendo la 3.5FN a la perfección.
 
 ## 5. Cuarta (4FN) y Quinta Forma Normal (5FN)
 
@@ -90,17 +88,13 @@ En esta etapa se realizaron tres intervenciones estructurales críticas sobre el
 
   * **4FN:** Se garantizó al aislar todas las relaciones de granularidad Muchos a Muchos (`ESCRIBE`, `CLASIFICA`, `PUBLICA`) en sus propias tablas independientes, evitando la creación de productos cartesianos (por ejemplo, combinar múltiples autores con múltiples categorías en una sola fila).
 
-  * **5FN:** Se alcanzó dado que transacciones como `RESERVA` operan sobre eventos temporales strictly que no pueden descomponerse en subtablas (ej. separar *Usuario-Fecha* de *Ejemplar-Fecha*) sin generar registros espurios o pérdida del contexto histórico al ejecutar un `JOIN`.
+  * **5FN:** Se alcanzó dado que transacciones como `RESERVA` operan sobre eventos temporales estrictos que no pueden descomponerse en subtablas (ej. separar *Usuario-Fecha* de *Ejemplar-Fecha*) sin generar registros espurios o pérdida del contexto histórico al ejecutar un `JOIN`.
 
 ## 6. Sexta Forma Normal (6FN)
 
 > **Regla:** Descomponer las tablas hasta que cada relación conste únicamente de la Llave Primaria y, como máximo, un solo atributo no clave.
-
-```
-ESTADO: OMITIDA INTENCIONALMENTE POR CRITERIOS DE RENDIMIENTO Y ARQUITECTURA OLTP
-```
-
-### Justificación Técnica
+ 
+> ### Justificación Técnica
 
 La **6FN** representa un nivel de descomposición extremo utilizado principalmente en bodegas de datos temporales (*Data Warehouses*). Aplicarla a un sistema transaccional en tiempo real (**OLTP**) como el de una biblioteca impactaría negativamente el rendimiento.
 
