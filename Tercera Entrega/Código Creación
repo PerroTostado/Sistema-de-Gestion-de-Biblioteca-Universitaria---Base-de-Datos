@@ -1,0 +1,184 @@
+CREATE TABLE AUTOR (
+ID_autor int,
+Fecha_nacimiento Date not null,
+Fecha_fallecido Date,
+Nombre varchar(100) not null,
+ 
+PRIMARY KEY (ID_autor)
+);
+
+CREATE TABLE CATEGORIA (
+ID_categoria int,
+Nombre varchar(100) not null,
+Descripcion varchar(250) not null,
+ 
+PRIMARY KEY (ID_categoria)
+);
+
+CREATE TABLE LIBRO (
+ID_libro int,
+Nro_paginas int not null,
+Titulo varchar(100) not null,
+Idioma varchar(30) not null,
+ 
+PRIMARY KEY (ID_libro)
+);
+
+CREATE TABLE EDITORIAL (
+NIT int,
+Nombre varchar(100),
+Pais varchar(30),
+ 
+PRIMARY KEY (NIT)
+);
+
+CREATE TABLE BIBLIOTECA (
+ID_sede int,
+Nombre varchar(100),
+ 
+PRIMARY KEY (ID_sede)
+);
+
+CREATE TABLE UBICACION (
+ID_ubicacion int,
+Estanteria int not null,
+Piso int not null,
+Sección varchar(100) not null,
+ID_Sede int not null,
+ 
+PRIMARY KEY (ID_ubicacion ),
+FOREIGN KEY (ID_Sede) REFERENCES BIBLIOTECA(ID_sede)
+);
+
+CREATE TABLE EJEMPLARES (
+ID_ejemplar int,
+ID_libro int not null,
+ID_ubicacion int not null,
+ 
+PRIMARY KEY (ID_ejemplar),
+FOREIGN KEY (ID_libro) REFERENCES LIBRO(ID_libro),
+FOREIGN KEY (ID_ubicacion) REFERENCES UBICACION(ID_ubicacion)
+);
+
+CREATE TABLE E_VIRTUAL (
+ID_ejemplar int,
+URL varchar(250) not null,
+Licencia Date not null,
+ 
+PRIMARY KEY (ID_ejemplar),
+FOREIGN KEY (ID_ejemplar) REFERENCES EJEMPLARES(ID_ejemplar)
+);
+
+CREATE TABLE E_FISICO (
+ID_ejemplar int,
+Cod_barras int not null UNIQUE,
+Estado int not null,
+ 
+PRIMARY KEY (ID_ejemplar),
+FOREIGN KEY (ID_ejemplar) REFERENCES EJEMPLARES(ID_ejemplar)
+);
+
+
+#de aqui para abajo o hizo soto :v
+
+CREATE TABLE CLASIFICA (
+ID_libro int,
+ID_categoria int,
+
+PRIMARY KEY (ID_libro, ID_categoria),
+FOREIGN KEY (ID_libro) REFERENCES LIBRO(ID_libro),	
+FOREIGN KEY (ID_categoria) REFERENCES CATEGORIA(ID_categoria)
+);
+
+CREATE TABLE ESCRIBE (
+ID_libro int,
+ID_autor int,
+
+PRIMARY KEY (ID_libro, ID_autor),
+FOREIGN KEY (ID_libro) REFERENCES LIBRO(ID_libro),
+FOREIGN KEY (ID_autor) REFERENCES AUTOR(ID_autor)
+);
+
+CREATE TABLE PUBLICA (
+ID_libro int,
+NIT int,
+
+PRIMARY KEY (ID_libro, NIT),
+FOREIGN KEY (ID_libro) REFERENCES LIBRO(ID_libro),
+FOREIGN KEY (NIT) REFERENCES EDITORIAL(NIT)
+);
+
+CREATE TABLE B_VIRTUAL (
+ID_sede int,
+Ubicacion_web varchar(250) not null,
+
+PRIMARY KEY (ID_sede),
+FOREIGN KEY (ID_sede) REFERENCES BIBLIOTECA(ID_sede)
+);
+
+CREATE TABLE B_FISICA (
+ID_sede int,
+Telefono varchar(20) not null,
+Direccion varchar(250) not null,
+
+PRIMARY KEY (ID_sede),
+FOREIGN KEY (ID_sede) REFERENCES BIBLIOTECA(ID_sede)
+);
+
+CREATE TABLE USUARIO (
+ID_usuario int,
+Telefono varchar(20) not null,
+Direccion varchar(250) not null,
+Nombre varchar(100) not null,
+ID_sede int,
+
+PRIMARY KEY (ID_usuario),
+FOREIGN KEY (ID_sede) REFERENCES BIBLIOTECA(ID_sede)
+);
+
+CREATE TABLE RESERVA (
+ID_reserva int,
+Fecha_devolucion date not null,
+Fecha_prestamo date not null,
+ID_usuario int,
+ID_ejemplar int,
+
+PRIMARY KEY (ID_reserva),
+FOREIGN KEY (ID_usuario) REFERENCES USUARIO(ID_usuario),
+FOREIGN KEY (ID_ejemplar) REFERENCES EJEMPLARES(ID_ejemplar)
+);
+
+CREATE TABLE RENOVARSE (
+ID_renovacion int,
+Fecha_vencimiento date not null,
+Fecha_solicitud date not null,
+ID_reserva int,
+
+PRIMARY KEY (ID_renovacion),
+FOREIGN KEY (ID_reserva) REFERENCES RESERVA(ID_reserva)
+);
+
+CREATE TABLE ESTUDIANTE (
+ID_usuario int,
+
+PRIMARY KEY (ID_usuario),
+FOREIGN KEY (ID_usuario) REFERENCES USUARIO(ID_usuario)
+);
+
+CREATE TABLE DOCENTE (
+ID_usuario int,
+
+PRIMARY KEY (ID_usuario),
+FOREIGN KEY (ID_usuario) REFERENCES USUARIO(ID_usuario)
+);
+
+CREATE TABLE SANCIONA (
+ID_sancion int,
+Fecha_inicio date not null,
+Motivo varchar(100) not null,
+Fecha_fin date not null,
+ID_usuario int,
+
+PRIMARY KEY (ID_sancion),
+FOREIGN KEY (ID_usuario) REFERENCES USUARIO(ID_usuario)
+);
