@@ -1,1 +1,58 @@
+SELECT ID_usuario, Nombre, Telefono, Direccion 
+FROM USUARIO;
 
+SELECT Titulo, Nro_paginas, Idioma 
+FROM LIBRO 
+WHERE Nro_paginas > 600 
+ORDER BY Nro_paginas DESC;
+
+SELECT ID_usuario, Motivo, Fecha_inicio, Fecha_fin 
+FROM SANCIONA 
+ORDER BY Fecha_inicio DESC;
+
+SELECT ID_sede, COUNT(ID_usuario) AS Total_Usuarios 
+FROM USUARIO 
+GROUP BY ID_sede;
+
+SELECT ID_usuario, COUNT(ID_sancion) AS Cantidad_Sanciones 
+FROM SANCIONA 
+GROUP BY ID_usuario 
+HAVING COUNT(ID_sancion) >= 3;
+
+SELECT U.Nombre AS Usuario, B.Nombre AS Sede
+FROM USUARIO U
+JOIN BIBLIOTECA B ON U.ID_sede = B.ID_sede;
+
+SELECT L.Titulo AS Libro, A.Nombre AS Autor
+FROM LIBRO L
+JOIN ESCRIBE E ON L.ID_libro = E.ID_libro
+JOIN AUTOR A ON E.ID_autor = A.ID_autor;
+
+SELECT L.Titulo, EF.Cod_barras, U.Piso, U.Sección, B.Nombre AS Sede
+FROM EJEMPLARES EJ
+JOIN LIBRO L ON EJ.ID_libro = L.ID_libro
+JOIN E_FISICO EF ON EJ.ID_ejemplar = EF.ID_ejemplar
+JOIN UBICACION U ON EJ.ID_ubicacion = U.ID_ubicacion
+JOIN BIBLIOTECA B ON U.ID_Sede = B.ID_sede
+WHERE EF.Estado = 1;
+
+SELECT U.ID_usuario, U.Nombre 
+FROM USUARIO U
+LEFT JOIN SANCIONA S ON U.ID_usuario = S.ID_usuario
+WHERE S.ID_sancion IS NULL;
+
+
+SELECT 
+    U.Nombre AS Lector,
+    L.Titulo AS Libro_Prestado,
+    B.Nombre AS Sede_Propietaria,
+    R.Fecha_prestamo AS Fecha_Salida,
+    R.Fecha_devolucion AS Entrega_Original,
+    REN.Fecha_vencimiento AS Entrega_Con_Renovacion
+FROM RESERVA R
+JOIN USUARIO U ON R.ID_usuario = U.ID_usuario
+JOIN EJEMPLARES EJ ON R.ID_ejemplar = EJ.ID_ejemplar
+JOIN LIBRO L ON EJ.ID_libro = L.ID_libro
+JOIN UBICACION UB ON EJ.ID_ubicacion = UB.ID_ubicacion
+JOIN BIBLIOTECA B ON UB.ID_Sede = B.ID_sede
+LEFT JOIN RENOVARSE REN ON R.ID_reserva = REN.ID_reserva;
