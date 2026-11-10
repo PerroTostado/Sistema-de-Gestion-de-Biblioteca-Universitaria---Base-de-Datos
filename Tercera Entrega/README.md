@@ -2,7 +2,7 @@
 
 En esta carpeta se encuentran los recursos correspondientes a la tercera entrega del proyecto de Base de Datos.
 
-Este tercer entregable corresponde a la implementación funcional de la base de datos para el sistema de biblioteca universitaria a partir del modelo relacional normalizado. En esta fase se realiza la definición formal del esquema mediante la creación de tablas con sus atributos correspondientes, la inserción de datos y el desarrollo de consultas representativas, tales como control de inventario, préstamos y usuarios.
+Este tercer entregable corresponde a la implementación funcional de la base de datos para el sistema de biblioteca universitaria a partir del modelo relacional normalizado, lo cual incluye: la creación de tablas con sus atributos correspondientes, la inserción de datos y el desarrollo de consultas representativas, tales como control de inventario, préstamos y usuarios.
 
 | Archivo | Descripción |
 | :--- | :--- |
