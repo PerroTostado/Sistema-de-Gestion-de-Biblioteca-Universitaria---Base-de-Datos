@@ -1,1 +1,164 @@
+INSERT INTO AUTOR (ID_autor, Fecha_nacimiento, Fecha_fallecido, Nombre) VALUES
+(1, '1970-05-14', NULL, 'Luis Joyanes Aguilar'),
+(2, '1965-08-22', NULL, 'Andrew S. Tanenbaum'),
+(3, '1980-01-10', NULL, 'Craig Walls'),
+(4, '1950-12-30', NULL, 'James Stewart'),
+(5, '1945-03-24', NULL, 'Frank H. Netter'),
+(6, '1972-11-05', NULL, 'Abraham Silberschatz'),
+(7, '1985-09-18', NULL, 'Ian Sommerville'),
+(8, '1960-07-12', NULL, 'Robert C. Martin'),
+(9, '1938-01-10', '2023-01-10', 'Donald Knuth'),
+(10, '1955-02-28', NULL, 'Thomas H. Cormen');
 
+INSERT INTO CATEGORIA (ID_categoria, Nombre, Descripcion) VALUES
+(1, 'Programación', 'Libros sobre lenguajes de programación como Java, C, C++ y Python'),
+(2, 'Bases de Datos', 'Modelado relacional, SQL y diseño de bases de datos'),
+(3, 'Desarrollo Backend', 'Frameworks de desarrollo como Spring Boot'),
+(4, 'Sistemas Operativos', 'Arquitectura y administración de sistemas GNU/Linux y Windows'),
+(5, 'Matemáticas', 'Cálculo multivariable, álgebra y matemáticas financieras'),
+(6, 'Medicina', 'Anatomía, fisiología y ciencias de la salud'),
+(7, 'Ingeniería de Software', 'Metodologías de desarrollo y arquitectura de software'),
+(8, 'Estructuras de Datos', 'Algoritmos y lógica computacional'),
+(9, 'Estadística', 'Probabilidad y análisis de datos'),
+(10, 'Agronomía', 'Ciencias agrícolas y desarrollo rural');
+
+INSERT INTO EDITORIAL (NIT, Nombre, Pais) VALUES
+(101, 'McGraw-Hill', 'Estados Unidos'),
+(102, 'Pearson Educación', 'España'),
+(103, 'O Reilly Media', 'Estados Unidos'),
+(104, 'Cengage Learning', 'México'),
+(105, 'Elsevier', 'Holanda'),
+(106, 'Springer', 'Alemania'),
+(107, 'Addison-Wesley', 'Estados Unidos'),
+(108, 'Manning Publications', 'Estados Unidos'),
+(109, 'Prentice Hall', 'Estados Unidos'),
+(110, 'Alfaomega', 'Colombia');
+
+INSERT INTO BIBLIOTECA (ID_sede, Nombre) VALUES
+(1, 'Biblioteca Central UIS'),
+(2, 'Biblioteca Sede Floridablanca'),
+(3, 'Biblioteca Facultad de Salud'),
+(4, 'Biblioteca Sede Barbosa'),
+(5, 'Biblioteca Sede Socorro');
+
+INSERT INTO B_FISICA (ID_sede, Telefono, Direccion) VALUES
+(1, '6344000', 'Cra 27 #9-C Bucaramanga (Campus Principal)'),
+(2, '6799000', 'Calle 5 # 4-02 Floridablanca'),
+(3, '6344000', 'Cra 32 # 29-31 Cerca al HUS'),
+(4, '7482000', 'Km 1 Vía Cite - Barbosa'),
+(5, '7274000', 'Calle 16 # 14-42 Socorro');
+
+INSERT INTO B_VIRTUAL (ID_sede, Ubicacion_web) VALUES
+(1, 'https://tangara.uis.edu.co/central'),
+(2, 'https://tangara.uis.edu.co/floridablanca'),
+(3, 'https://tangara.uis.edu.co/salud'),
+(4, 'https://tangara.uis.edu.co/barbosa'),
+(5, 'https://tangara.uis.edu.co/socorro');
+
+INSERT INTO LIBRO (ID_libro, Nro_paginas, Titulo, Idioma) VALUES
+(1, 850, 'Fundamentos de Programación C++', 'Español'),
+(2, 900, 'Sistemas de Bases de Datos', 'Español'),
+(3, 500, 'Spring Boot en Acción', 'Inglés'),
+(4, 1100, 'Cálculo Multivariable', 'Español'),
+(5, 750, 'Atlas de Anatomía Humana', 'Español'),
+(6, 1200, 'Sistemas Operativos Modernos', 'Español'),
+(7, 450, 'Código Limpio (Clean Code)', 'Español'),
+(8, 800, 'Ingeniería de Software', 'Español'),
+(9, 600, 'Algoritmos y Programación en Java', 'Español'),
+(10, 400, 'Estadística para Ingenieros', 'Español');
+
+INSERT INTO UBICACION (ID_ubicacion, Estanteria, Piso, Sección, ID_Sede) VALUES
+(1, 12, 2, 'Ciencias Básicas e Ingeniería', 1),
+(2, 5, 1, 'Colección General', 2),
+(3, 8, 3, 'Anatomía y Medicina', 3),
+(4, 3, 1, 'Ingeniería y Agro', 4),
+(5, 7, 2, 'Ciencias y Letras', 5),
+(6, 0, 0, 'Repositorio Digital Central', 1),
+(7, 0, 0, 'Repositorio Digital Florida', 2),
+(8, 0, 0, 'Base de Datos Médica Digital', 3),
+(9, 0, 0, 'E-books Barbosa', 4),
+(10, 0, 0, 'E-books Socorro', 5);
+
+INSERT INTO EJEMPLARES (ID_ejemplar, ID_libro, ID_ubicacion) VALUES
+(1, 1, 1), (2, 2, 1), (3, 3, 2), (4, 4, 1), (5, 5, 3), 
+(6, 6, 2), (7, 7, 4), (8, 8, 5), (9, 9, 4), (10, 10, 5),
+(11, 1, 6), (12, 2, 6), (13, 3, 7), (14, 4, 6), (15, 5, 8), 
+(16, 6, 7), (17, 7, 9), (18, 8, 10), (19, 9, 9), (20, 10, 10);
+
+INSERT INTO E_FISICO (ID_ejemplar, Cod_barras, Estado) VALUES
+(1, 10001, 1), (2, 10002, 2), (3, 10003, 1), (4, 10004, 3), (5, 10005, 2),
+(6, 10006, 1), (7, 10007, 1), (8, 10008, 2), (9, 10009, 3), (10, 10010, 1);
+
+INSERT INTO E_VIRTUAL (ID_ejemplar, URL, Licencia) VALUES
+(11, 'https://uis.edu.co/libro1', '2028-12-31'), (12, 'https://uis.edu.co/libro2', '2028-12-31'),
+(13, 'https://uis.edu.co/libro3', '2027-06-30'), (14, 'https://uis.edu.co/libro4', '2030-01-01'),
+(15, 'https://uis.edu.co/libro5', '2029-11-15'), (16, 'https://uis.edu.co/libro6', '2027-08-20'),
+(17, 'https://uis.edu.co/libro7', '2029-05-10'), (18, 'https://uis.edu.co/libro8', '2030-12-31'),
+(19, 'https://uis.edu.co/libro9', '2028-02-28'), (20, 'https://uis.edu.co/libro10', '2029-09-30');
+
+INSERT INTO CLASIFICA (ID_libro, ID_categoria) VALUES
+(1, 1), (2, 2), (3, 3), (4, 5), (5, 6),
+(6, 4), (7, 1), (8, 7), (9, 1), (10, 9);
+
+INSERT INTO ESCRIBE (ID_libro, ID_autor) VALUES
+(1, 1), (2, 6), (3, 3), (4, 4), (5, 5),
+(6, 2), (7, 8), (8, 7), (9, 1), (10, 10);
+
+INSERT INTO PUBLICA (ID_libro, NIT) VALUES
+(1, 101), (2, 102), (3, 108), (4, 104), (5, 105),
+(6, 109), (7, 103), (8, 102), (9, 110), (10, 101);
+
+INSERT INTO USUARIO (ID_usuario, Telefono, Direccion, Nombre, ID_sede) VALUES
+(2220145, '3151234567', 'Barrio Centro, Lebrija', 'Jhoan Sebastian Barragan Herrera', 1),
+(2220146, '3161234568', 'Cabecera, Bucaramanga', 'Laura Carolina Ariza Ardila', 1),
+(2220147, '3171234569', 'Provenza, Bucaramanga', 'Andres Mauricio Muñoz Muñoz', 2),
+(2220148, '3181234570', 'Real de Minas, Bucaramanga', 'Adriana Janine Castañeda Castro', 3),
+(2210100, '3191234571', 'Cañaveral, Floridablanca', 'Paola Andrea Daza Gómez', 2),
+(2210101, '3201234572', 'Centro, Barbosa', 'Carlos Martinez', 4),
+(2230102, '3211234573', 'Barrio Universitario, Socorro', 'Ana Ramirez', 5),
+(2230103, '3221234574', 'Barrio La Joya, Bucaramanga', 'Luis Torres', 1),
+(900101, '3109876543', 'Altos de Cabecera, Bucaramanga', 'Profesor Julian Rojas', 1),
+(900102, '3119876544', 'Ruitoque, Floridablanca', 'Profesora Maria Gomez', 2);
+
+INSERT INTO ESTUDIANTE (ID_usuario) VALUES
+(2220145), (2220146), (2220147), (2220148),
+(2210100), (2210101), (2230102), (2230103);
+
+INSERT INTO DOCENTE (ID_usuario) VALUES
+(900101), (900102);
+
+INSERT INTO RESERVA (ID_reserva, Fecha_prestamo, Fecha_devolucion, ID_usuario, ID_ejemplar) VALUES
+(1, '2026-11-01', '2026-11-15', 2220145, 2),
+(2, '2026-10-15', '2026-10-30', 2220145, 11),
+(3, '2026-11-05', '2026-11-19', 2220145, 14),
+(4, '2026-10-10', '2026-10-24', 2220146, 5),
+(5, '2026-11-02', '2026-11-16', 2220146, 12),
+(6, '2026-11-07', '2026-11-21', 2220148, 1),
+(7, '2026-10-20', '2026-11-04', 2210100, 3),
+(8, '2026-10-25', '2026-11-09', 2210101, 7),
+(9, '2026-11-08', '2026-11-22', 900101, 8),
+(10, '2026-09-15', '2026-09-30', 900101, 13);
+
+INSERT INTO RENOVARSE (ID_renovacion, Fecha_solicitud, Fecha_vencimiento, ID_reserva) VALUES
+(1, '2026-11-14', '2026-11-29', 1),
+(2, '2026-10-29', '2026-11-13', 2),
+(3, '2026-11-18', '2026-12-03', 3),
+(4, '2026-10-23', '2026-11-07', 4),
+(5, '2026-11-15', '2026-11-30', 5),
+(6, '2026-11-20', '2026-12-05', 6),
+(7, '2026-11-03', '2026-11-18', 7),
+(8, '2026-11-08', '2026-11-23', 8),
+(9, '2026-11-21', '2026-12-06', 9),
+(10, '2026-09-29', '2026-10-14', 10);
+
+INSERT INTO SANCIONA (ID_sancion, Fecha_inicio, Motivo, Fecha_fin, ID_usuario) VALUES
+(1, '2025-05-10', 'Entrega tardía (3 días)', '2025-05-17', 2210101),
+(2, '2025-08-01', 'Libro rayado', '2025-08-15', 2210101),
+(3, '2026-02-10', 'Entrega tardía (1 semana)', '2026-02-25', 2210101),
+(4, '2026-10-31', 'Pérdida de código de barras', '2026-11-15', 2210101),
+(5, '2026-03-20', 'Daño en portada', '2026-04-20', 2230102),
+(6, '2026-07-10', 'Mal uso de material de reserva', '2026-07-25', 2230102),
+(7, '2026-10-25', 'Entrega tardía', '2026-11-01', 2230102),
+(8, '2025-11-05', 'Entrega tardía', '2025-11-12', 900101),
+(9, '2026-04-15', 'Pérdida temporal de libro', '2026-05-15', 900101),
+(10, '2026-09-05', 'Entrega tardía', '2026-09-12', 900101);
