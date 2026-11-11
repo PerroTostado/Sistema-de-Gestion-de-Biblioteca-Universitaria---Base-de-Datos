@@ -6,18 +6,20 @@ FROM LIBRO
 WHERE Nro_paginas > 600 
 ORDER BY Nro_paginas DESC;
 
-SELECT ID_usuario, Motivo, Fecha_inicio, Fecha_fin 
-FROM SANCIONA 
-ORDER BY Fecha_inicio DESC;
+SELECT S.ID_usuario, U.Nombre, S.Motivo, S.Fecha_inicio, S.Fecha_fin 
+FROM SANCIONA S
+JOIN USUARIO U ON S.ID_usuario = U.ID_usuario
+ORDER BY S.Fecha_inicio DESC;
 
 SELECT ID_sede, COUNT(ID_usuario) AS Total_Usuarios 
 FROM USUARIO 
 GROUP BY ID_sede;
 
-SELECT ID_usuario, COUNT(ID_sancion) AS Cantidad_Sanciones 
-FROM SANCIONA 
-GROUP BY ID_usuario 
-HAVING COUNT(ID_sancion) >= 3;
+SELECT U.ID_usuario, U.Nombre, COUNT(S.ID_sancion) AS Cantidad_Sanciones 
+FROM SANCIONA S
+JOIN USUARIO U ON S.ID_usuario = U.ID_usuario
+GROUP BY U.ID_usuario, U.Nombre
+HAVING COUNT(S.ID_sancion) >= 3;
 
 SELECT U.Nombre AS Usuario, B.Nombre AS Sede
 FROM USUARIO U
